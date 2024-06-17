@@ -10,22 +10,24 @@
     background-image: url('header.jpg');
     background-size: cover;
     background-position: center;
-    height: 150px; /* adjust the height to your liking */
+    height: 250px; /* adjust the height to your liking */
     display: flex;
+    flex-direction: column; /* add this to stack elements vertically */
     justify-content: center;
     align-items: center;
   }
-  
+
   header h1 {
-    color: #fff; /* adjust the text color to contrast with the background image */
-    font-size: 36px;
+      color: #fff; /* adjust the text color to contrast with the background image */
+      font-size: 36px;
+      margin-bottom: 20px; /* add margin between h1 and h2 */
   }
 
-  header hr {
-    border: 1px solid #ccc; /* adjust the border style to your liking */
-    margin: 10px 0;
+  header h2 {
+      color: #fff; /* adjust the text color to contrast with the background image */
+      font-size: 24px;
   }
-  
+    
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -40,7 +42,7 @@
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* add this to center the nav items */
   }
   
   nav li {
@@ -50,6 +52,7 @@
   nav a {
     color: #337ab7;
     text-decoration: none;
+    text-align: center; /* add this to center the nav text */
   }
   
   nav a:hover {
@@ -67,6 +70,7 @@
   
   h2 {
     margin-top: 0;
+    text-align: center;
   }
   
   /* Footer */
